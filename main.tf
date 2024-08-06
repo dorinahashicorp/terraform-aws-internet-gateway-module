@@ -6,8 +6,3 @@ resource "aws_internet_gateway" "gateway" {
     Name = var.gateway_name
   }
 }
-
-resource "aws_internet_gateway_attachment" "gw-attachment" {
-  internet_gateway_id = aws_internet_gateway.gateway.id
-  vpc_id              = var.vpc_id
-}
