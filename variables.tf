@@ -8,3 +8,9 @@ variable "gateway_name" {
   type        = string
   default     = "Core Gateway"
 }
+
+variable "aws_region" {
+  description = "The AWS region"
+  type        = string
+  default     = "us-east-1"
+}
